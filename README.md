@@ -1,4 +1,4 @@
-# Teardown ofthe BitBoy printer emulator
+# Teardown of the BitBoy printer emulator
 
 Too cheap to buy a 99€ + shipping Game Boy Printer emulator ? Too lazy to remove two Phillips screws ? Here are some images of what's inside this toy for wealthy nerds !
 
