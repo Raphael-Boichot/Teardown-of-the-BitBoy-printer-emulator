@@ -1,6 +1,6 @@
 # Teardown of the BitBoy printer emulator
 
-Too cheap to buy a 99€ + shipping Game Boy Printer emulator ? Too lazy to remove two Phillips screws ? Here are some images of what's inside this [toy for wealthy nerds](https://gameboyphoto.bigcartel.com/) ! The developpment story can be found [here](/Datasheets/BitBoy_Project_Development_Brief_V2.0.pdf). The device is completely closed. I got it second hand for half the price around 2021, which is still too expensive to my own taste but this was for Science.
+Too cheap to buy a 99€ + shipping Game Boy Printer emulator ? Too lazy to remove two Phillips screws ? Here are some images of what's inside this [toy for wealthy nerds](https://gameboyphoto.bigcartel.com/) ! The development story can be found [here](/Datasheets/BitBoy_Project_Development_Brief_V2.0.pdf). The device is completely closed. I got it second hand for half the price around 2021, which is still too expensive to my own taste but this was for Science.
 
 ## General aspect
 ![](/Images/BitBoy_1.png)
@@ -23,3 +23,5 @@ The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 k
 I'm not working for Bigcartel and I won't debug the device for free (my hourly rate is too expensive for them anyway). It is compatible with most of the Western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the games. I suspect some particular strategies for particular games to cut images. It overall supports compressed protocol and custom palettes, but sometimes not.
 
 Japanese only games are more or less managed as long as the protocol is sufficiently "Game Boy Camera like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only.
+
+To be continued (or not)
