@@ -20,6 +20,6 @@ The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 k
 
 ## Some identified flaws
 
-I'm not working for Bigcartel and I won't debug the device for free. It is compatible with most of the Western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the games. I suspect some particular strategies for particular games to cut images. It support compressed protocol and custom palettes.
+I'm not working for Bigcartel and I won't debug the device for free. It is compatible with most of the Western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the games. I suspect some particular strategies for particular games to cut images. It supports compressed protocol and custom palettes.
 
-Japanese only games are more or less managed as long as the protocol is "Game Boy Camera like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only.
+Japanese only games are more or less managed as long as the protocol is sufficiently "Game Boy Camera like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only.
