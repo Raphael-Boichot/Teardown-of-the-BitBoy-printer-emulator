@@ -19,3 +19,7 @@ The version I have is a 2.0. The serial socket is a GBA one, these are the most 
 The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 kB flash and 16 kB SRAM. It runs at 32 MHz. Quite powerfull compared to an Arduino but most of all, very low power consumption. The battery is managed by a MAX1811 USB powered lithium charger. The RTC chip is a I²C MCP79400 from Microchip. I do not see any bus transciever / level shifter so I assume that it sends data in 3.X volts to the Game Boy. Some pins are 5.5V tolerant on the other hand so the PIC can directly eat 5V signals from the Game Boy.
 
 ## Some identified flaws
+
+I'm not working for Bigcartel and I won't debug the device for free. It is compatible with most of the Western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the games. I suspect some particular strategies for particular games to cut images. It support compressed protocol and custom palettes.
+
+Japanese only games are more or less managed as long as the protocol is "Game Boy Camera like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only.
