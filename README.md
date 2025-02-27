@@ -8,7 +8,7 @@ The device uses a molded case. It fires by connecting a serial cable with Game B
 
 ## Upper side
 ![](/Images/BitBoy_2.png)
-It uses a 500 mAh battery which is virtually never depleted as the device consumes nothing despite using a RTC and writing to SD card. It can print thousands of images on a single charge.
+It uses a 500 mAh battery which is virtually never depleted as the device consumes nothing despite using a RTC and writing to SD card. It can print thousands of images on a single charge. Access to SD card is surprisingly sluggish. The device uses flux control to manage slow access to SD card. The red socket is probably the flashing port for the microcontroller.
 
 ## Upper side without battery
 ![](/Images/BitBoy_3.png)
