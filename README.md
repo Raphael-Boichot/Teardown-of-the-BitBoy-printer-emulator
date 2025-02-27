@@ -16,5 +16,6 @@ The version I have is a 2.0. The serial socket is a GBA one, these are the most 
 
 ## Lower side showing chips
 ![](/Images/BitBoy_4.png)
-The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 kB flash and 16 kB SRAM. It runs at 32 MHz. Quite powerfull compared to an Arduino but most of all, very low power consumption. The battery is managed by a MAX1811 USB powered lithium charger. The RTC chip is a I²C MCP79400 from Microchip.
+The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 kB flash and 16 kB SRAM. It runs at 32 MHz. Quite powerfull compared to an Arduino but most of all, very low power consumption. The battery is managed by a MAX1811 USB powered lithium charger. The RTC chip is a I²C MCP79400 from Microchip. I do not see any bus transciever / level shifter so I assume that it sends data in 3.X volts to the Game Boy. Some pins are 5.5V tolerant on the other hand so the PIC can directly eat 5V signals from the Game Boy.
 
+## Some identified flaws
