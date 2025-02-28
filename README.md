@@ -1,6 +1,6 @@
 # Teardown of the BitBoy printer emulator
 
-Too cheap to buy a 99€ + shipping Game Boy Printer emulator ? Too lazy to remove two Phillips screws ? Here are some images of what's inside this [toy for wealthy nerds](https://gameboyphoto.bigcartel.com/) ! The development story can be found [here](/Datasheets/BitBoy_Project_Development_Brief_V2.0.pdf). The device is sadly completely closed. I got mine second hand for half the price around 2021, which is still too expensive to my own taste but this was for science.
+Too cheap to buy a 99€ + shipping Game Boy Printer emulator ? Too lazy to remove two Phillips screws ? Here are some images of what's inside this [toy for wealthy nerds](https://gameboyphoto.bigcartel.com/) ! The development story can be found [here](/Datasheets/BitBoy_Project_Development_Brief_V2.0.pdf). The device is sadly completely closed (not open source). I got mine second hand for half the price around 2021, which is still too expensive to my own taste but this was for science.
 
 ## General aspect
 ![](/Images/BitBoy_1.png)
