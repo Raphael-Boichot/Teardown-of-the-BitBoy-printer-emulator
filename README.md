@@ -24,6 +24,6 @@ I'm not working for Bigcartel and I won't debug the device for free (my hourly r
 
 Japanese only games are more or less managed as long as the protocol is sufficiently "Game Boy Camera like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only.
 
-In brief, the BitBoy is very adapated for the Game Boy Camera and very common games, prone to crash in the other cases.
+In brief, the BitBoy is very adapated for the Game Boy Camera and very common games, prone to crash in the other cases. This anyway must fit with 99% of its use as printer emulator.
 
 To be continued (or not)
