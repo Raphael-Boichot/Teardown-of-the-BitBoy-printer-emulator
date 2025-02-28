@@ -20,8 +20,10 @@ The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 k
 
 ## Some identified flaws after my own tests
 
-I'm not working for Bigcartel and I won't debug the device for free (my hourly rate is too expensive for them anyway). But the device is compatible with most of the Western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the games. I suspect that some particular strategies have been tuned for particular games (like Mary-Kate and Ashley: Pocket Planner which is supported without sending feed paper signal). It overall supports compressed protocol and custom palettes. Common games may crash the printer for no obvious reasons.
+I'm not working for Bigcartel and I won't debug the device for free (my hourly rate is too expensive for them anyway). But the device is compatible with most of the Western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the games. I suspect that some particular strategies have been tuned for particular games by counting packets (like Mary-Kate and Ashley: Pocket Planner which is supported without sending feed paper signal). It overall supports compressed protocol and custom palettes. Some common games may crash the printer for no obvious reasons if the image is too long / not followed by a feed paper command / not standard in size.
 
 Japanese only games are more or less managed as long as the protocol is sufficiently "Game Boy Camera like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only.
+
+In brief, the BitBoy is very adapated for the Game Boy Camera and very common games, prone to crash in the other cases.
 
 To be continued (or not)
