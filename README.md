@@ -18,7 +18,7 @@ The version I have is a 2.0. The serial socket is a GBA one, these are the most 
 ![](/Images/BitBoy_4.png)
 The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 kB flash and 16 kB SRAM. It runs at 32 MHz. Quite powerfull compared to an Arduino but most of all, very low power consumption. The battery is managed by a MAX1811 USB powered lithium charger. The RTC chip is a I²C MCP79400 from Microchip. I do not see any obvious bus transciever but some pins are 5.5V tolerant so the PIC can probably directly eat 5V signals from the Game Boy. I cannot identify U2 (marking 0B2N), U3 (marking 332C) and Q1 (marking M03) for sure at the moment I wrote this. One of them must be a 3.3V regulator for the SD card.
 
-## Some identified flaws
+## Some identified flaws after my own tests
 
 I'm not working for Bigcartel and I won't debug the device for free (my hourly rate is too expensive for them anyway). But the device is compatible with most of the Western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the games. I suspect that some particular strategies have been tuned for particular games (like Mary-Kate and Ashley: Pocket Planner which is supported without sending feed paper signal). It overall supports compressed protocol and custom palettes. Common games may crash the printer for no obvious reasons.
 
