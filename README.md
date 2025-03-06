@@ -20,12 +20,12 @@ The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 k
 
 ## Some identified flaws after my own tests
 
-I'm not working for Bigcartel and I won't debug the device for free (my hourly rate is too expensive for them anyway). But the device is compatible with most of the western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the context. I suspect that some particular strategies have been tuned for particular games by counting packets (like Mary-Kate and Ashley: Pocket Planner which is supported without sending feed paper signal). It overall supports compressed protocol and custom palettes. Some common games may crash the device for not that obvious reasons, in general when a time out is detected before the feed paper command (so out of a Mary-Kate and Ashley: Pocket Planner context typically).
+The device is compatible with most of the western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the context. I suspect that some particular strategies have been tuned for particular games by counting packets or detecting some particular checksums (like Mary-Kate and Ashley: Pocket Planner which is supported without sending feed paper signal). It overall supports compressed protocol and custom palettes. Some common games may crash the device for not that obvious reasons, in general when a time out is detected before the feed paper command (so out of a Mary-Kate and Ashley: Pocket Planner context typically).
 
 Japanese only games are more or less managed as long as the protocol is sufficiently "Game Boy Camera like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only.
 
 In brief, the BitBoy is very adapated for the Game Boy Camera and very common games, prone to crash in the other cases. This anyway must fit with 99.9% of its use as printer emulator.
 
-The lack of update makes it quite outdated compared to 2025 open access counterparts which integrates some undocumented tricks of the Game Boy Printer protocol.
+The lack of update makes it impossible to improve and it is now quite outdated compared to 2025 open access counterparts which integrates some undocumented tricks of the Game Boy Printer protocol.
 
 To be continued (or not).
