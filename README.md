@@ -1,6 +1,6 @@
 # Teardown of the BitBoy printer emulator
 
-Too cheap to buy a 99€ + shipping Game Boy Printer emulator ? Too lazy to remove two Phillips screws ? Here are some images of what's inside this [toy for wealthy nerds](https://gameboyphoto.bigcartel.com/) ! The development story can be found [here](/Datasheets/BitBoy_Project_Development_Brief_V2.0.pdf). The device is sadly completely closed (not open source). I got mine second hand for half the price around 2021, which is still too expensive to my own taste but this was for science.
+Too cheap to buy a 99€ + shipping Game Boy Printer emulator ? Too lazy to remove two Phillips screws ? Here are some images of what's inside this [toy for wealthy nerds](https://gameboyphoto.bigcartel.com/) ! The development story can be found [here](/Datasheets/BitBoy_Project_Development_Brief_V2.0.pdf). The device is sadly completely closed (not open source). I got mine second hand for half the price around 2021, which is still way too expensive to my own taste but this was for scientific purpose.
 
 ## General aspect
 ![](/Images/BitBoy_1.png)
@@ -20,12 +20,12 @@ The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 k
 
 ## Some identified flaws after my own tests
 
-The device is compatible with most of the western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image, depending on the context. I suspect that some particular strategies have been tuned for particular games by counting packets or detecting some particular checksums (like Mary-Kate and Ashley: Pocket Planner which is supported without sending feed paper signal). It overall supports compressed protocol and custom palettes. Some common games may crash the device for not that obvious reasons, in general when a time out is detected before the feed paper command (so out of a Mary-Kate and Ashley: Pocket Planner context typically).
+The device is compatible with most of the western games including Pokémons, Zelda, Game Boy Camera, etc. The BitBoy uses both time out or paper feed information to detect end of image automatically. It supports compressed protocol and custom palettes. Some common games may crash the device when a time out is detected before a feed paper command (so typically out of a Mary-Kate and Ashley: Pocket Planner context typically).
 
-Japanese only games are more or less managed as long as the protocol is sufficiently "Game Boy Camera like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only.
+Japanese only games are more or less managed as long as the protocol is sufficiently "western games like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only, double speed mode + batch printing crashes the device.
 
-In brief, the BitBoy is very adapated for the Game Boy Camera and very common games, prone to crash in the other cases. This anyway must fit with 99.9% of its use as printer emulator.
+But my main gripes are the native 1x BMP image format that obliges to use an additional image converter (BMP is not natively supported for online publication on most platforms and 4x upscaling is a very minimal requirement to see something), but most of all, rebooting the device is a real pain. Because yes, the devices crashes (freezes), sometimes, and unbricking it requires to find a needle to push the reset button through a tiny hole (or open the shell with a screwdriver). You're outside in that case, you're left with a brick. The lack of reboot/ on-off button is a very big design flaw.
 
-The lack of update makes it impossible to improve and it is now quite outdated compared to 2025 open access counterparts which integrates some undocumented tricks of the Game Boy Printer protocol.
+The fact that the device is completely closed makes it impossible to improve. It is now quite outdated compared to open access counterparts which integrates decent file format, more printing options, wifi support and full game compatibility.
 
 To be continued (or not).
