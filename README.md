@@ -2,6 +2,8 @@
 
 Too cheap to buy a 99€ + shipping Game Boy Printer emulator ? Too lazy to remove two Phillips screws ? Here are some images of what's inside this [toy for wealthy nerds](https://gameboyphoto.bigcartel.com/) ! The development story can be found [here](/Datasheets/BitBoy_Project_Development_Brief_V2.0.pdf). The device is sadly completely closed (not open source). I got mine second hand for half the price around 2021, which is still way too expensive to my own taste but this was for scientific purpose.
 
+Let's see what's inside the beast.
+
 ## General aspect
 ![](/Images/BitBoy_1.png)
 The device uses a neat molded case. It fires by connecting a serial cable with Game Boy on so it's probably using an interrupt reading CLOCK pin (HIGH by default) to wake-up the main chip from deep sleep. It comprises a discrete hole on the back side to reset the chip as it can (quite oftenly) freeze or crash.
