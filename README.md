@@ -20,6 +20,8 @@ The version I have is a 2.0. The serial socket is a GBA one, these are the most 
 ![](/Images/BitBoy_4.png)
 The main chip is a PIC24FJ128GA106, a 54 pins 16 bits microcontroller with 128 kB flash and 16 kB SRAM. It runs at 32 MHz. Quite powerfull compared to an Arduino but most of all, very low power consumption. The battery is managed by a MAX1811 USB powered lithium charger. The RTC chip is a I²C MCP79400 from Microchip. I do not see any obvious bus transciever but some pins are 5.5V tolerant so the PIC can probably directly eat 5V signals from the Game Boy. I cannot identify U2 (marking 0B2N), U3 (marking 332C) and Q1 (marking M03) for sure at the moment I wrote this. One of them must be a 3.3V regulator for the SD card. These tiny chips are probably involved in power management.
 
+Let's be honest, it's nicely engineered.
+
 ## Some identified flaws after my own tests
 
 The device is compatible with most of the western games including Pokémons, Zelda, Game Boy Camera, etc. It supports compressed protocol and custom palettes. The BitBoy probably uses time out and paper feed information to detect end of image automatically (plus some other tricks like counting packets to assemble images in particular games). Some common games may crash the device when a time out is detected before a feed paper command (so typically out of a Mary-Kate and Ashley: Pocket Planner context typically).
