@@ -24,7 +24,7 @@ Let's be honest, it's nicely engineered.
 
 ## Some identified flaws after my own tests
 
-The device is compatible with most of the western games including Pokémons, Zelda, Game Boy Camera, etc. It supports compressed protocol and custom palettes. The BitBoy probably uses time out and paper feed information to detect end of image automatically (plus some other tricks like counting packets to assemble images in particular games). Some common games may crash the device when a time out is detected before a feed paper command (so typically out of a Mary-Kate and Ashley: Pocket Planner context typically).
+The device is compatible with most of the western games including Pokémons, Zelda, Game Boy Camera, etc. It supports compressed protocol and custom palettes. The BitBoy probably uses time out and paper feed information to detect end of image automatically (plus some other tricks like counting packets to assemble images in particular games). Some common games may crash the device when a time out is detected before a feed paper command (so typically out of a Mary-Kate and Ashley: Pocket Planner context).
 
 Japanese only games are more or less managed as long as the protocol is sufficiently "western games like". Most homebrews just don't work as they push the protocol to its limit. Photo! is supported in normal speed only, double speed mode + batch printing crashes the device.
 
