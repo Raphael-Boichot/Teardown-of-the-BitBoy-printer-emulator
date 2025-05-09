@@ -10,7 +10,7 @@ The device uses a neat molded case. It fires by connecting a serial cable with G
 
 ## Upper side
 ![](/Images/BitBoy_2.png)
-The device uses a 500 mAh battery which is virtually never depleted as the current draw is nearly nothing despite powering a RTC and the SD card when writing. It can print thousands of images on a single charge (I never managed to go out of charge in endurance tests). Access to SD card is surprisingly sluggish in the other hand. The device uses flux control to manage this slow access. This means that it can access SD card without detaching the interrupt on CLOCK which is quite impressive. The red socket on this side of the PCB is probably the flashing port for the microcontroller. There is no way to update the firmware for a normal user.
+The device uses a 500 mAh battery which is virtually never depleted as the current draw is nearly nothing despite powering a RTC and the SD card when writing. It can print thousands of images on a single charge (I never managed to go out of charge in endurance tests). Access to SD card is surprisingly sluggish in the other hand. Assembling the sub-parts of an image is ultra slow as well. The device uses flux control to manage this slow access. This means that it can access SD card without detaching the interrupt on CLOCK which is quite impressive. The red socket on this side of the PCB is probably the flashing port for the microcontroller. There is no way to update the firmware for a normal user.
 
 ## Upper side without battery
 ![](/Images/BitBoy_3.png)
